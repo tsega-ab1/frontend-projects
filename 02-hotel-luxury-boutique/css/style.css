@@ -241,3 +241,20 @@ img { max-width: 100%; display: block; }
   .nav__links { display: none; }
   .hero__grid { grid-template-columns: 1fr; }
 }
+
+/* Placeholder image fills */
+.img-placeholder[data-label*="Hero"] {
+  background-image: url('../assets/images/hero-exterior.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-placeholder[data-label*="Room interior"] {
+  background-image: url('../assets/images/room-generic.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-placeholder[data-label*="Interior/amenity"] {
+  background-image: url('../assets/images/interior-detail.jpg');
+  background-size: cover;
+  background-position: center;
+}
