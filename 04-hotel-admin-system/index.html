@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meridian Stays — Luxury Boutique Hotel</title>
+<meta name="description" content="A luxury boutique hotel offering elegant rooms, curated dining, and personal service in the heart of the city." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav__mark">Meridian Stays</a>
+  <nav class="nav__links">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="search-results.html">Search Rooms</a>
+    <a href="account.html">My Account</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="booking.html" class="nav__cta">Book now</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__grid">
+      <div>
+        <p class="hero__kicker">Real-time availability · Instant confirmation</p>
+        <h1 class="hero__headline">Search, compare, and book your room in minutes.</h1>
+        <p class="hero__sub">Placeholder copy — replace with your actual value proposition: live rates, no hidden fees, direct-booking perks vs. third-party sites.</p>
+        <a href="search-results.html" class="hero__cta">Search rooms</a>
+      </div>
+      <div class="img-placeholder" style="--ratio:4/5" data-label="Hero: hotel exterior or lobby at golden hour, vertical crop"></div>
+    </div>
+  </section>
+
+  <form class="search-bar" onsubmit="return false;">
+    <div>
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin" />
+    </div>
+    <div>
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout" />
+    </div>
+    <div>
+      <label for="guests">Guests</label>
+      <select id="guests"><option>1 Guest</option><option selected>2 Guests</option><option>3 Guests</option><option>4+ Guests</option></select>
+    </div>
+    <div>
+      <label for="rooms-count">Rooms</label>
+      <select id="rooms-count"><option selected>1 Room</option><option>2 Rooms</option></select>
+    </div>
+    <button type="submit" onclick="window.location.href='search-results.html'">Search rooms</button>
+  </form>
+
+  <section class="rooms">
+    <h2 class="section__title">Popular right now</h2>
+    <p class="section__sub">Placeholder: real data would pull this from actual booking/view counts.</p>
+    <div class="rooms__grid">
+      <article class="room-card">
+        <div class="img-placeholder" style="--ratio:4/3" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div class="room-card__body">
+          <h3>Garden Room</h3>
+          <p class="room-card__meta">2 Guests · 28 m² · Garden view</p>
+          <p class="room-card__price">$180 <span>/ night</span></p>
+          <a href="room-detail.html" class="room-card__link">View room →</a>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="img-placeholder" style="--ratio:4/3" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div class="room-card__body">
+          <h3>Terrace Suite</h3>
+          <p class="room-card__meta">3 Guests · 42 m² · Private terrace</p>
+          <p class="room-card__price">$260 <span>/ night</span></p>
+          <a href="room-detail.html" class="room-card__link">View room →</a>
+        </div>
+      </article>
+      <article class="room-card">
+        <div class="img-placeholder" style="--ratio:4/3" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div class="room-card__body">
+          <h3>Penthouse</h3>
+          <p class="room-card__meta">4 Guests · 65 m² · Skyline view</p>
+          <p class="room-card__price">$420 <span>/ night</span></p>
+          <a href="room-detail.html" class="room-card__link">View room →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="amenities">
+    <h2 class="section__title">Hotel amenities</h2>
+    <div class="amenities__grid">
+      <div class="amenity"><div class="amenity__icon">🍷</div><h3>Rooftop bar</h3><p>Open nightly, curated wine list.</p></div>
+      <div class="amenity"><div class="amenity__icon">🧖</div><h3>Spa &amp; wellness</h3><p>Treatments by appointment.</p></div>
+      <div class="amenity"><div class="amenity__icon">🍳</div><h3>Breakfast included</h3><p>Locally sourced, served daily.</p></div>
+      <div class="amenity"><div class="amenity__icon">🚗</div><h3>Valet parking</h3><p>Complimentary for guests.</p></div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2 class="section__title">Gallery</h2>
+    <div class="gallery__grid">
+      <div class="img-placeholder" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+      <div class="img-placeholder" style="--ratio:1/1" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+      <div class="img-placeholder" style="--ratio:1/1" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+      <div class="img-placeholder" style="--ratio:1/1" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+      <div class="img-placeholder" style="--ratio:1/1" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+      <div class="img-placeholder" style="--ratio:1/1" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Ready for a stay to remember?</h2>
+    <p>Placeholder copy: closing pitch, reinforce the one thing that makes this hotel worth choosing.</p>
+    <a href="booking.html">Check availability</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© 2026 Meridian Stays Hotel</span>
+  <div class="footer__links">
+    <a href="contact.html">Contact</a>
+    <a href="#">Instagram</a>
+    <a href="#">Privacy</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book Your Stay — The Verandah</title>
+<meta name="description" content="Complete your reservation at The Verandah hotel." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav__mark">The Verandah</a>
+  <nav class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms &amp; Suites</a>
+    <a href="contact.html">Location</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="steps">
+    <nav class="steps__nav" id="steps-nav" aria-label="Booking progress">
+      <span class="active" data-step="1">1. Guest details</span>
+      <span data-step="2">2. Extras</span>
+      <span data-step="3">3. Payment</span>
+      <span data-step="4">4. Confirmed</span>
+    </nav>
+
+    <!-- Step 1 -->
+    <section class="step active" data-step="1">
+      <h2>Guest details</h2>
+      <div class="summary-box">
+        <div class="row"><span>Terrace Suite</span><span>Aug 14 – Aug 17 (3 nights)</span></div>
+        <div class="row"><span>2 Guests</span><span>$260 / night</span></div>
+      </div>
+      <form class="form-grid" onsubmit="return false;">
+        <div><label for="fname">First name</label><input id="fname" required /></div>
+        <div><label for="lname">Last name</label><input id="lname" required /></div>
+        <div><label for="email">Email</label><input id="email" type="email" required /></div>
+        <div><label for="phone">Phone</label><input id="phone" type="tel" required /></div>
+        <div class="full"><label for="requests">Special requests (optional)</label><textarea id="requests" rows="3"></textarea></div>
+      </form>
+      <div class="step-actions">
+        <span></span>
+        <button class="btn-primary" onclick="goStep(2)">Continue to extras</button>
+      </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="step" data-step="2">
+      <h2>Add extras</h2>
+      <div class="form-grid">
+        <label class="full"><input type="checkbox" /> Airport transfer — $45</label>
+        <label class="full"><input type="checkbox" /> Breakfast for two — $30</label>
+        <label class="full"><input type="checkbox" /> Late checkout (2 PM) — $25</label>
+      </div>
+      <div class="step-actions">
+        <button class="btn-ghost" onclick="goStep(1)">Back</button>
+        <button class="btn-primary" onclick="goStep(3)">Continue to payment</button>
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="step" data-step="3">
+      <h2>Payment</h2>
+      <div class="summary-box">
+        <div class="row"><span>Room (3 nights)</span><span>$780.00</span></div>
+        <div class="row"><span>Taxes &amp; fees</span><span>$93.60</span></div>
+        <div class="row total"><span>Total</span><span>$873.60</span></div>
+      </div>
+      <form class="form-grid" onsubmit="return false;">
+        <div class="full"><label for="cardname">Name on card</label><input id="cardname" required /></div>
+        <div class="full"><label for="cardnum">Card number</label><input id="cardnum" placeholder="•••• •••• •••• ••••" required /></div>
+        <div><label for="exp">Expiry</label><input id="exp" placeholder="MM/YY" required /></div>
+        <div><label for="cvc">CVC</label><input id="cvc" required /></div>
+      </form>
+      <p style="font-size:0.8rem; color:var(--fog-dim);">Demo form — no real payment is processed. Connect a real payment processor (Stripe, etc.) before launch.</p>
+      <div class="step-actions">
+        <button class="btn-ghost" onclick="goStep(2)">Back</button>
+        <button class="btn-primary" onclick="goStep(4)">Confirm &amp; pay</button>
+      </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section class="step" data-step="4">
+      <div class="confirmation">
+        <div class="confirmation__icon">✓</div>
+        <h2>Booking confirmed</h2>
+        <p style="margin:12px 0 0;">A confirmation has been sent to your email. Confirmation #VH-28471.</p>
+        <a href="index.html" class="hero__cta" style="margin-top:24px; display:inline-block;">Return home</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© 2026 The Verandah Hotel</span>
+  <div class="footer__links"><a href="contact.html">Contact</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function goStep(n) {
+  document.querySelectorAll('.step').forEach(s => s.classList.toggle('active', +s.dataset.step === n));
+  document.querySelectorAll('#steps-nav span').forEach(s => s.classList.toggle('active', +s.dataset.step === n));
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+</body>
+</html>

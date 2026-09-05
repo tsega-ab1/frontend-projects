@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calm Serum — Corvina</title>
+<meta name="description" content="Calm Serum: five ingredients, redness relief, made in small batches." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a href="index.html" class="mark">Corvina</a>
+<button class="menu-toggle" onclick="document.getElementById('menu').classList.add('open')">Menu</button>
+<a href="cart.html" class="bag-pill">Bag <span id="cart-badge">0</span></a>
+
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" onclick="document.getElementById('menu').classList.remove('open')">Close</button>
+  <a href="index.html">Home</a>
+  <a href="product.html">Calm Serum</a>
+  <a href="cart.html">Bag</a>
+</div>
+
+<main>
+  <section class="product-lede">
+    <p class="kicker">Redness relief · All skin types</p>
+    <h1>Calm Serum</h1>
+    <p>Placeholder description: what it does, who it's for, and the one ingredient worth naming up front.</p>
+  </section>
+
+  <div class="product-shot img-placeholder" style="--ratio:1/1" data-label="Calm Serum: product bottle, clean background, studio light"></div>
+
+  <section class="buy-block">
+    <p class="buy-block__price">$38.00</p>
+    <div class="size-row">
+      <button class="selected" data-size="30ml" data-price="38">30ml</button>
+      <button data-size="50ml" data-price="52">50ml — $52</button>
+    </div>
+    <button class="buy-cta" onclick="addToCart()">Add to bag</button>
+  </section>
+
+  <section class="product-detail">
+    <details open>
+      <summary>Ingredients</summary>
+      <p>Placeholder: full INCI list. Ingredient transparency is a major trust signal in this category — don't abbreviate it.</p>
+    </details>
+    <details>
+      <summary>How to use</summary>
+      <p>Placeholder: application steps, frequency, what to pair it with.</p>
+    </details>
+    <details>
+      <summary>Shipping &amp; returns</summary>
+      <p>Free shipping over $50. 30-day return window on unopened products.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="colophon">© 2026 Corvina Skincare · Shipping &amp; Returns · Privacy</footer>
+
+<script src="js/cart.js"></script>
+<script>
+document.querySelectorAll('.size-row button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.size-row button').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    document.querySelector('.buy-block__price').textContent = '$' + btn.dataset.price + '.00';
+  });
+});
+function addToCart() {
+  const sel = document.querySelector('.size-row button.selected');
+  addItemToCart({ name: 'Calm Serum', size: sel.dataset.size, price: +sel.dataset.price, qty: 1 });
+  const btn = document.querySelector('.buy-cta');
+  const original = btn.textContent;
+  btn.textContent = 'Added ✓';
+  setTimeout(() => { btn.textContent = original; }, 1200);
+}
+</script>
+</body>
+</html>

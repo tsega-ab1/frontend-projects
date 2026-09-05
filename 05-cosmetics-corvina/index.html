@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Corvina — Skincare With Nothing to Hide</title>
+<meta name="description" content="Corvina makes clean, five-ingredient skincare. One product line, made in small batches." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a href="index.html" class="mark">Corvina</a>
+<button class="menu-toggle" onclick="document.getElementById('menu').classList.add('open')">Menu</button>
+<a href="cart.html" class="bag-pill">Bag <span id="cart-badge">0</span></a>
+
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" onclick="document.getElementById('menu').classList.remove('open')">Close</button>
+  <a href="index.html">Home</a>
+  <a href="product.html">Calm Serum</a>
+  <a href="cart.html">Bag</a>
+  <a href="#marginalia">Ingredients</a>
+</div>
+
+<main>
+  <section class="lede">
+    <p class="kicker">Made in small batches · One product line</p>
+    <h1>We stopped adding things skin doesn't need.</h1>
+    <p class="scroll-cue">Scroll ↓</p>
+  </section>
+
+  <section class="feature">
+    <div class="feature__img img-placeholder" style="--ratio:4/5" data-label="Product in hand or on skin, natural light, no heavy retouching"></div>
+    <div class="feature__text">
+      <p class="kicker">The only serum we make</p>
+      <h2>Calm Serum</h2>
+      <p class="desc">Placeholder copy — replace with the real product description. What it does, who it's for, why it's the only one you need for redness.</p>
+      <p class="feature__price">$38.00</p>
+      <a href="product.html" class="feature__cta">View product →</a>
+    </div>
+  </section>
+
+  <section class="break">
+    <div class="break__img img-placeholder" style="--ratio:3/4" data-label="Close-up of a raw ingredient — the plant or material central to the formula"></div>
+    <div class="break__note">
+      <p class="kicker">What's inside</p>
+      <p>Five ingredients, listed in full on every box. Nothing else. Placeholder — name the one or two ingredients that actually matter here.</p>
+    </div>
+  </section>
+
+  <section class="marginalia" id="marginalia">
+    <p class="marginalia__label">Ingredients</p>
+    <div class="marginalia__content">
+      <h2>Everything we leave out matters as much as what we put in.</h2>
+      <p style="color:var(--fog); max-width:60ch;">Placeholder copy: the real formulation philosophy in two sentences — no fragrance, no filler oils, no marketing-only actives.</p>
+      <div class="note-list">
+        <div><strong>Centella Asiatica</strong><p>Calms visible redness and irritation.</p></div>
+        <div><strong>Niacinamide</strong><p>Supports the skin barrier over time.</p></div>
+        <div><strong>Squalane</strong><p>Locks in moisture without weight.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journal">
+    <h2>What people notice first</h2>
+    <div class="voice">
+      <p>"Placeholder review — real quotes with specific results convert better than any headline copy."</p>
+      <span>J. Alvarez, using Calm Serum for 3 months</span>
+    </div>
+    <div class="voice">
+      <p>"Placeholder review — one honest, slightly imperfect quote is more credible than five perfect ones."</p>
+      <span>M. Okoye, using Calm Serum for 6 weeks</span>
+    </div>
+  </section>
+
+  <section class="finale">
+    <h2>Try it for a season.</h2>
+    <a href="product.html">Shop Calm Serum — $38 →</a>
+  </section>
+</main>
+
+<footer class="colophon">© 2026 Corvina Skincare · Shipping &amp; Returns · Privacy</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

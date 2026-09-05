@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Search Rooms — Harborline</title>
+<meta name="description" content="Search and filter available rooms at Harborline by price, capacity, and amenities." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav__mark">Harborline</a>
+  <nav class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="search-results.html" aria-current="page">Search Rooms</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="booking.html" class="nav__cta">My booking</a>
+</header>
+
+<main>
+  <div class="page-header">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Search Rooms</p>
+    <h1>Search Rooms</h1>
+    <p style="color:var(--fog-dim); margin-top:6px;">Placeholder search: Aug 14 – Aug 17 · 2 Guests · 1 Room</p>
+  </div>
+
+  <div class="results-layout">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <label>Max price: $<output id="price-out">400</output>/night</label>
+        <input type="range" id="price-range" min="100" max="500" value="400" oninput="applyFilters()" />
+      </div>
+      <div class="filter-group">
+        <h3 style="font-size:0.85rem; margin-bottom:8px;">Room type</h3>
+        <label><input type="checkbox" class="type-filter" value="standard" checked onchange="applyFilters()" /> Standard</label>
+        <label><input type="checkbox" class="type-filter" value="suite" checked onchange="applyFilters()" /> Suite</label>
+        <label><input type="checkbox" class="type-filter" value="penthouse" checked onchange="applyFilters()" /> Penthouse</label>
+      </div>
+      <div class="filter-group">
+        <h3 style="font-size:0.85rem; margin-bottom:8px;">Amenities</h3>
+        <label><input type="checkbox" class="amenity-filter" value="wifi" onchange="applyFilters()" /> Free Wi-Fi</label>
+        <label><input type="checkbox" class="amenity-filter" value="breakfast" onchange="applyFilters()" /> Breakfast included</label>
+        <label><input type="checkbox" class="amenity-filter" value="parking" onchange="applyFilters()" /> Free parking</label>
+      </div>
+    </aside>
+
+    <div>
+      <div class="results-toolbar">
+        <span class="results-count" id="results-count">6 rooms match your filters</span>
+        <select id="sort-select" onchange="applyFilters()">
+          <option value="recommended">Sort: Recommended</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+      <div id="results-list"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© 2026 Harborline</span>
+  <div class="footer__links"><a href="contact.html">Contact</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/rooms-data.js"></script>
+<script src="js/search-results.js"></script>
+</body>
+</html>

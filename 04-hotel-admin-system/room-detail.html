@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terrace Suite — Meridian Stays</title>
+<meta name="description" content="Terrace Suite at Meridian Stays: 42m², private terrace, king bed, city view." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav__mark">Meridian Stays</a>
+  <nav class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="search-results.html">Search Rooms</a>
+    <a href="account.html">My Account</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="booking.html" class="nav__cta">Book now</a>
+</header>
+
+<main>
+  <div class="page-header">
+    <p class="breadcrumb"><a href="index.html">Home</a> / <a href="search-results.html">Search Rooms</a> / Terrace Suite</p>
+  </div>
+
+  <div class="room-detail">
+    <div>
+      <div class="room-detail__gallery">
+        <div class="img-placeholder" style="--ratio:4/3" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div class="img-placeholder" style="--ratio:4/3" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div class="img-placeholder" style="--ratio:4/3" data-label="Interior/amenity detail — one representative interior shot (single reused detail photo)"></div>
+      </div>
+
+      <h1>Terrace Suite</h1>
+      <p style="color:var(--fog-dim); margin-top:6px;">42 m² · King bed · 3 Guests max · Private terrace</p>
+
+      <div class="room-detail__facts">
+        <div><strong>3</strong><span>Guests</span></div>
+        <div><strong>42m²</strong><span>Room size</span></div>
+        <div><strong>King</strong><span>Bed type</span></div>
+      </div>
+
+      <p>Placeholder description: what the room actually feels like to be in — light, view, quiet, a specific detail worth mentioning (the terrace, the tub, the reading nook). Two to three sentences, no filler.</p>
+
+      <h3 style="margin-top:28px; font-size:1.1rem;">Amenities</h3>
+      <ul class="amenity-list">
+        <li>Private terrace</li>
+        <li>Air conditioning</li>
+        <li>Free Wi-Fi</li>
+        <li>Minibar</li>
+        <li>Rain shower</li>
+        <li>Room service</li>
+        <li>Smart TV</li>
+        <li>Nespresso machine</li>
+      </ul>
+
+      <h3 style="margin-top:28px; font-size:1.1rem;">Cancellation policy</h3>
+      <p>Free cancellation up to 48 hours before check-in. Placeholder — replace with actual policy.</p>
+    </div>
+
+    <aside class="booking-card">
+      <p class="booking-card__price">$260 <span>/ night</span></p>
+      <p style="font-size:0.82rem; color:var(--fog-dim);">Taxes and fees calculated at checkout</p>
+      <label for="d-checkin">Check-in</label>
+      <input type="date" id="d-checkin" />
+      <label for="d-checkout">Check-out</label>
+      <input type="date" id="d-checkout" />
+      <label for="d-guests">Guests</label>
+      <select id="d-guests"><option>1</option><option selected>2</option><option>3</option></select>
+      <button type="button" onclick="window.location.href='booking.html'">Reserve this room</button>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© 2026 Meridian Stays Hotel</span>
+  <div class="footer__links">
+    <a href="contact.html">Contact</a>
+    <a href="#">Instagram</a>
+    <a href="#">Privacy</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

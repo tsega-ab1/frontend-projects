@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Account — Meridian Stays</title>
+<meta name="description" content="Manage your reservations and account details at Meridian Stays." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="nav__mark">Meridian Stays</a>
+  <nav class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="search-results.html">Search Rooms</a>
+    <a href="account.html" aria-current="page">My Account</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="booking.html" class="nav__cta">New booking</a>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>My Account</h1>
+  </div>
+
+  <div class="account-layout">
+    <nav class="account-nav">
+      <a href="#" class="active">Reservations</a>
+      <a href="#">Saved rooms</a>
+      <a href="#">Payment methods</a>
+      <a href="#">Profile settings</a>
+      <a href="#">Notifications</a>
+    </nav>
+
+    <div>
+      <h2 style="font-size:1.15rem; margin-bottom:16px;">Upcoming</h2>
+      <div class="reservation-card">
+        <div class="img-placeholder" style="--ratio:1/1" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div>
+          <h3 style="font-size:1.05rem;">Corner Suite — Meridian Stays</h3>
+          <p style="font-size:0.85rem; color:var(--fog-dim); margin:4px 0;">Aug 14 – Aug 17, 2026 · 2 Guests</p>
+          <span class="status-badge confirmed">Confirmed</span>
+        </div>
+        <div style="text-align:right;">
+          <p style="font-family:var(--font-display); font-weight:600;">$873.60</p>
+          <a href="#" style="font-size:0.85rem; border-bottom:1px solid var(--accent);">View details</a>
+        </div>
+      </div>
+
+      <h2 style="font-size:1.15rem; margin:32px 0 16px;">Past stays</h2>
+      <div class="reservation-card">
+        <div class="img-placeholder" style="--ratio:1/1" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div>
+          <h3 style="font-size:1.05rem;">Standard King — Meridian Stays</h3>
+          <p style="font-size:0.85rem; color:var(--fog-dim); margin:4px 0;">Mar 2 – Mar 4, 2026 · 1 Guest</p>
+          <span class="status-badge completed">Completed</span>
+        </div>
+        <div style="text-align:right;">
+          <p style="font-family:var(--font-display); font-weight:600;">$341.20</p>
+          <a href="#" style="font-size:0.85rem; border-bottom:1px solid var(--accent);">Book again</a>
+        </div>
+      </div>
+      <div class="reservation-card">
+        <div class="img-placeholder" style="--ratio:1/1" data-label="Room interior — bed + window, natural light (single reused room photo)"></div>
+        <div>
+          <h3 style="font-size:1.05rem;">Executive Suite — Meridian Stays</h3>
+          <p style="font-size:0.85rem; color:var(--fog-dim); margin:4px 0;">Dec 20 – Dec 23, 2025 · 3 Guests</p>
+          <span class="status-badge completed">Completed</span>
+        </div>
+        <div style="text-align:right;">
+          <p style="font-family:var(--font-display); font-weight:600;">$798.00</p>
+          <a href="#" style="font-size:0.85rem; border-bottom:1px solid var(--accent);">Book again</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <span>© 2026 Meridian Stays</span>
+  <div class="footer__links"><a href="contact.html">Contact</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
