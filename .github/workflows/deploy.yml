@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy selected folders to GitHub Pages
 
 on:
   push:
@@ -11,26 +11,54 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -r 01-frontend-dev-portfolio _site/01-frontend-dev-portfolio
+          cp -r 02-hotel-luxury-boutique _site/02-hotel-luxury-boutique
+          cp -r 03-hotel-booking-platform _site/03-hotel-booking-platform
+          cp -r 04-hotel-admin-system _site/04-hotel-admin-system
+          cp -r 05-cosmetics-corvina _site/05-cosmetics-corvina
+          cat > _site/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>Frontend Projects Portfolio</title>
+          </head>
+          <body>
+            <h1>Frontend Projects</h1>
+            <ul>
+              <li><a href="01-frontend-dev-portfolio/">Frontend Dev Portfolio</a></li>
+              <li><a href="02-hotel-luxury-boutique/">Hotel Luxury Boutique</a></li>
+              <li><a href="03-hotel-booking-platform/">Hotel Booking Platform</a></li>
+              <li><a href="04-hotel-admin-system/">Hotel Admin System</a></li>
+              <li><a href="05-cosmetics-corvina/">Cosmetics Corvina</a></li>
+            </ul>
+          </body>
+          </html>
+          EOF
+
+      - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
