@@ -32,6 +32,7 @@ jobs:
           cp -r 03-hotel-booking-platform _site/03-hotel-booking-platform
           cp -r 04-hotel-admin-system _site/04-hotel-admin-system
           cp -r 05-cosmetics-corvina _site/05-cosmetics-corvina
+          cp -r 06-portfolio-site _site/06-portfolio-site
           cat > _site/index.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
@@ -47,6 +48,7 @@ jobs:
               <li><a href="03-hotel-booking-platform/">Hotel Booking Platform</a></li>
               <li><a href="04-hotel-admin-system/">Hotel Admin System</a></li>
               <li><a href="05-cosmetics-corvina/">Cosmetics Corvina</a></li>
+              <li><a href="06-portfolio-site/">Portfolio Site</a></li>
             </ul>
           </body>
           </html>
