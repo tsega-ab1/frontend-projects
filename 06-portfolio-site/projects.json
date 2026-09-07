@@ -1,30 +1,30 @@
 [
   {
-    "name": "SelamMind",
-    "category": "Product Design · Mobile UI",
-    "statement": "A mental health app with real-time chat, voice and video calling — designed for calm, accessible conversations.",
-    "link": "https://example.com/selammind",
-    "image": "selammind.jpg"
+    "name": "Cosmetics Corvina",
+    "category": "Product Design . frontend web",
+    "statement": "A clean, product-focused cosmetics storefront highlighting ingredients and a minimalist shopping experience.",
+    "link": "https://tsega-ab1.github.io/frontend-projects/05-cosmetics-corvina/",
+    "image": "hero-product.jpg"
   },
   {
-    "name": "PAW",
-    "category": "UX · Full-Stack",
-    "statement": "A personal AI wellness OS spanning web and mobile, built with React, Vite, Node and Flutter.",
-    "link": "https://example.com/paw",
-    "image": "paw.jpg"
+    "name": "HAS",
+    "category": "UI web frontend · Hotel Admin System",
+    "statement": "A hotel booking site paired with an admin dashboard for managing rooms, guests, and reservations.",
+    "link": "https://tsega-ab1.github.io/frontend-projects/04-hotel-admin-system/",
+    "image": "hero-exterior.jpg"
   },
   {
-    "name": "WeWe",
+    "name": "Hotel Booking Platform",
     "category": "Product Strategy · UI",
-    "statement": "A freight-matching platform designed and architected for the Ethiopian logistics market.",
-    "link": "https://example.com/wewe",
-    "image": "wewe.jpg"
+    "statement": "A full booking platform with live search, room listings, and a multi-step reservation flow.",
+    "link": "https://tsega-ab1.github.io/frontend-projects/03-hotel-booking-platform/",
+    "image": "interior-detail.jpg"
   },
   {
-    "name": "DevAdmin",
-    "category": "Graphic Design · Dev Tools",
-    "statement": "A terminal developer dashboard with a bold retro-arcade visual identity, built in Python with Rich.",
-    "link": "https://example.com/devadmin",
-    "image": "devadmin.jpg"
+    "name": "Hotel Luxury Boutique",
+    "category": "Graphic Design · UI web frontend",
+    "statement": "A boutique hotel site showcasing rooms, amenities, and bookings with an elegant, high-end aesthetic.",
+    "link": "https://tsega-ab1.github.io/frontend-projects/02-hotel-luxury-boutique/",
+    "image": "room-generic.jpg"
   }
 ]
