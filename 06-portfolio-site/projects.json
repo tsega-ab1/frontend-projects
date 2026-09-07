@@ -1,0 +1,30 @@
+[
+  {
+    "name": "SelamMind",
+    "category": "Product Design · Mobile UI",
+    "statement": "A mental health app with real-time chat, voice and video calling — designed for calm, accessible conversations.",
+    "link": "https://example.com/selammind",
+    "image": "selammind.jpg"
+  },
+  {
+    "name": "PAW",
+    "category": "UX · Full-Stack",
+    "statement": "A personal AI wellness OS spanning web and mobile, built with React, Vite, Node and Flutter.",
+    "link": "https://example.com/paw",
+    "image": "paw.jpg"
+  },
+  {
+    "name": "WeWe",
+    "category": "Product Strategy · UI",
+    "statement": "A freight-matching platform designed and architected for the Ethiopian logistics market.",
+    "link": "https://example.com/wewe",
+    "image": "wewe.jpg"
+  },
+  {
+    "name": "DevAdmin",
+    "category": "Graphic Design · Dev Tools",
+    "statement": "A terminal developer dashboard with a bold retro-arcade visual identity, built in Python with Rich.",
+    "link": "https://example.com/devadmin",
+    "image": "devadmin.jpg"
+  }
+]
