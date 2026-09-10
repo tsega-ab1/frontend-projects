@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SmileLife Dental Hospital</title>
+<meta name="description" content="Book an appointment or get in touch with SmileLife Dental Hospital in Addis Ababa. Phone, email, address and opening hours.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .hours-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; font-size: 0.92rem; }
+  .hours-list li { display: flex; justify-content: space-between; max-width: 320px; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <path d="M17 5c-3 0-4.5 1.8-6.5 1.8S7 5 5.5 5C3.5 5 2 7 2 10.5c0 5 2 9 3.5 13 .8 2.2 1.8 4 3.2 4 1.8 0 2-3.5 2.8-6 .6-1.8 1.2-3 2.5-3s1.9 1.2 2.5 3c.8 2.5 1 6 2.8 6 1.4 0 2.4-1.8 3.2-4 1.5-4 3.5-8 3.5-13C26 7 24.5 5 22.5 5c-1.5 0-3 1.8-5.5 1.8Z" stroke="#1B4B47" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text"><strong>SmileLife</strong><span>DENTAL HOSPITAL</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="#book"><span>Book Appointment</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="visually-hidden">Toggle menu</span>&#9776;
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">CONTACT</p>
+      <h1>Book your appointment</h1>
+      <p class="hero__lede">Reach us by phone, email, or the form below — we typically confirm appointments within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section" id="book">
+    <div class="container contact-grid">
+      <div>
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <span class="why-icon" aria-hidden="true">&#128222;</span>
+            <div><h3>Phone</h3><p><a class="text-link" href="tel:+251111234567">+251 11 123 4567</a></p></div>
+          </div>
+          <div class="contact-info__item">
+            <span class="why-icon" aria-hidden="true">&#9993;</span>
+            <div><h3>Email</h3><p><a class="text-link" href="mailto:hello@smilelife.example">hello@smilelife.example</a></p></div>
+          </div>
+          <div class="contact-info__item">
+            <span class="why-icon" aria-hidden="true">&#128205;</span>
+            <div><h3>Address</h3><p>Bole Road, Addis Ababa, Ethiopia</p></div>
+          </div>
+          <div class="contact-info__item">
+            <span class="why-icon" aria-hidden="true">&#128337;</span>
+            <div>
+              <h3>Opening Hours</h3>
+              <ul class="hours-list">
+                <li><span>Mon – Fri</span><span>8:00 AM – 7:00 PM</span></li>
+                <li><span>Saturday</span><span>9:00 AM – 5:00 PM</span></li>
+                <li><span>Sunday</span><span>Emergencies only</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img src="assets/images/contact-map.jpg" alt="Map placeholder — embed a real Google or Apple Maps location here" width="1200" height="700" loading="lazy" style="border-radius:var(--radius); margin-top: 2rem;">
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+          </div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="service">Service you're interested in</label>
+          <select id="service" name="service" style="width:100%; padding:0.85em 1em; border:1.5px solid rgba(27,75,71,0.2); border-radius:var(--radius-sm); background:var(--white); font-family:var(--font-body); color:var(--text);">
+            <option>General Dentistry</option>
+            <option>Implant Dentistry</option>
+            <option>Orthodontics</option>
+            <option>Cosmetic Dentistry</option>
+            <option>Root Canal Therapy</option>
+            <option>Periodontics</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you need, and a preferred day or time."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Request Appointment &rarr;</button>
+        <p class="form-note" id="form-note" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="footer-band">
+  <span class="footer-band__tagline"><span class="line"></span> HEALTHY TEETH &nbsp;&bull;&nbsp; HEALTHY LIVES &nbsp;&bull;&nbsp; TOGETHER <span class="line"></span></span>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo-text" style="color:var(--white);"><strong style="color:var(--white);">SmileLife</strong></p>
+      <p>Quality, affordable dental care for the whole family in Addis Ababa.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="services.html">General Dentistry</a></li>
+        <li><a href="services.html">Implant Dentistry</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+251111234567">+251 11 123 4567</a></li>
+        <li><a href="mailto:hello@smilelife.example">hello@smilelife.example</a></li>
+        <li>Addis Ababa, Ethiopia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 SmileLife Dental Hospital. All rights reserved.</p>
+    <p>Healthy teeth. Healthy lives. Together.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

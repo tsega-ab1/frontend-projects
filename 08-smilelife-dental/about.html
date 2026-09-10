@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — SmileLife Dental Hospital</title>
+<meta name="description" content="Learn about SmileLife Dental Hospital's mission, history and approach to patient-centered dental care in Addis Ababa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gap); text-align: center; margin-top: 2.5rem; }
+  .stat__num { font-family: var(--font-heading); font-size: 2.2rem; color: var(--teal); display: block; }
+  .stat__label { font-size: 0.85rem; color: var(--text-muted); }
+  @media (max-width: 760px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <path d="M17 5c-3 0-4.5 1.8-6.5 1.8S7 5 5.5 5C3.5 5 2 7 2 10.5c0 5 2 9 3.5 13 .8 2.2 1.8 4 3.2 4 1.8 0 2-3.5 2.8-6 .6-1.8 1.2-3 2.5-3s1.9 1.2 2.5 3c.8 2.5 1 6 2.8 6 1.4 0 2.4-1.8 3.2-4 1.5-4 3.5-8 3.5-13C26 7 24.5 5 22.5 5c-1.5 0-3 1.8-5.5 1.8Z" stroke="#1B4B47" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text"><strong>SmileLife</strong><span>DENTAL HOSPITAL</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="contact.html"><span>Book Appointment</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="visually-hidden">Toggle menu</span>&#9776;
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">ABOUT US</p>
+      <h1>Care built around every patient who walks in</h1>
+      <p class="hero__lede">SmileLife Dental Hospital has been serving Addis Ababa families for over a decade, combining modern dentistry with a genuinely comfortable patient experience.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-strip">
+      <img src="assets/images/about-hero.jpg" alt="SmileLife Dental Hospital hallway and reception" width="1300" height="850" loading="lazy">
+      <div>
+        <p class="eyebrow">OUR STORY</p>
+        <h2>From one clinic to a full hospital</h2>
+        <p>SmileLife started as a small general practice in 2013. As demand grew for specialist care, we expanded into a full dental hospital — bringing orthodontics, implant dentistry, and pediatric care under one roof, without losing the personal attention patients came to us for in the first place.</p>
+        <p>Today our team treats patients from first checkup through complex restorative work, using digital imaging and sterilization standards that meet international protocols.</p>
+      </div>
+      <div class="stats-row" style="grid-column: 1 / -1;">
+        <div><span class="stat__num">12+</span><span class="stat__label">Years in practice</span></div>
+        <div><span class="stat__num">18</span><span class="stat__label">Dental specialists</span></div>
+        <div><span class="stat__num">40k+</span><span class="stat__label">Patients treated</span></div>
+        <div><span class="stat__num">6</span><span class="stat__label">Specialties offered</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="mission-heading">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">OUR MISSION</p>
+        <h2 id="mission-heading">Dentistry that puts the patient first</h2>
+        <p>Three principles guide every treatment plan we write.</p>
+      </div>
+      <div class="why-grid" style="grid-template-columns: repeat(3, 1fr); display:grid;">
+        <div class="why-item">
+          <span class="why-icon" aria-hidden="true">&#129504;</span>
+          <div><h3>Explain before we treat</h3><p>Every patient understands their diagnosis and options before any procedure begins.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="why-icon" aria-hidden="true">&#128737;</span>
+          <div><h3>Safety without compromise</h3><p>Sterilization and infection control follow international hospital-grade protocols.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="why-icon" aria-hidden="true">&#128176;</span>
+          <div><h3>Honest, upfront pricing</h3><p>You'll see the full cost of treatment before you commit to it — no surprises at checkout.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="footer-band">
+  <span class="footer-band__tagline"><span class="line"></span> HEALTHY TEETH &nbsp;&bull;&nbsp; HEALTHY LIVES &nbsp;&bull;&nbsp; TOGETHER <span class="line"></span></span>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo-text" style="color:var(--white);"><strong style="color:var(--white);">SmileLife</strong></p>
+      <p>Quality, affordable dental care for the whole family in Addis Ababa.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="services.html">General Dentistry</a></li>
+        <li><a href="services.html">Implant Dentistry</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+251111234567">+251 11 123 4567</a></li>
+        <li><a href="mailto:hello@smilelife.example">hello@smilelife.example</a></li>
+        <li>Addis Ababa, Ethiopia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 SmileLife Dental Hospital. All rights reserved.</p>
+    <p>Healthy teeth. Healthy lives. Together.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
