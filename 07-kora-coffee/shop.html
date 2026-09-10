@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — KORA Coffee</title>
+<meta name="description" content="Shop single-origin Ethiopian coffee from KORA — Sidamo, Yirgacheffe, Limu and Harrar, roasted to order.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .shop-hero { padding-block: clamp(2.5rem, 6vw, 4.5rem) 1rem; }
+  .shop-hero h1 { font-size: clamp(2rem, 4vw, 2.8rem); max-width: 16ch; }
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--gap);
+  }
+  .shop-grid .product-card { text-decoration: none; }
+  .shop-grid a.product-card:hover .product-card__name { color: var(--terracotta); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">KORA <span>Coffee</span></a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" aria-current="page">Shop</a></li>
+        <li><a href="index.html#origin">Our Story</a></li>
+        <li><a href="index.html#journal">Journal</a></li>
+        <li><a href="index.html#footer">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="visually-hidden">Toggle menu</span>&#9776;
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shop-hero container">
+    <p class="hero__eyebrow">Shop</p>
+    <h1>Four regions, one standard</h1>
+    <p class="hero__lede">Every lot on this shelf scored above 85 on our cupping table before we bought it.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="shop-grid">
+        <a class="product-card" href="product.html">
+          <div class="product-card__img tint-forest">
+            <img src="assets/images/featured-bag.jpg" alt="Bag of Sidamo Sunrise coffee" width="900" height="1200" loading="lazy">
+          </div>
+          <h2 class="product-card__name">Sidamo Sunrise</h2>
+          <p class="product-card__meta">Washed · Light roast</p>
+          <p class="product-card__price">$18 / 250g</p>
+        </a>
+        <a class="product-card" href="product.html">
+          <div class="product-card__img tint-terracotta">
+            <img src="assets/images/featured-bag.jpg" alt="Bag of Yirgacheffe Bloom coffee" width="900" height="1200" loading="lazy">
+          </div>
+          <h2 class="product-card__name">Yirgacheffe Bloom</h2>
+          <p class="product-card__meta">Natural · Medium roast</p>
+          <p class="product-card__price">$21 / 250g</p>
+        </a>
+        <a class="product-card" href="product.html">
+          <div class="product-card__img tint-gold">
+            <img src="assets/images/featured-bag.jpg" alt="Bag of Limu Highland coffee" width="900" height="1200" loading="lazy">
+          </div>
+          <h2 class="product-card__name">Limu Highland</h2>
+          <p class="product-card__meta">Washed · Medium-dark roast</p>
+          <p class="product-card__price">$19 / 250g</p>
+        </a>
+        <a class="product-card" href="product.html">
+          <div class="product-card__img">
+            <img src="assets/images/featured-bag.jpg" alt="Bag of Harrar Reserve coffee" width="900" height="1200" loading="lazy">
+          </div>
+          <h2 class="product-card__name">Harrar Reserve</h2>
+          <p class="product-card__meta">Dry-processed · Dark roast</p>
+          <p class="product-card__price">$23 / 250g</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo">KORA <span>Coffee</span></p>
+      <p>Single-origin Ethiopian coffee, bought direct and roasted to order.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="shop.html">All coffee</a></li>
+        <li><a href="shop.html">Subscriptions</a></li>
+        <li><a href="shop.html">Gift sets</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="index.html#origin">Our story</a></li>
+        <li><a href="index.html#journal">Journal</a></li>
+        <li><a href="#">Wholesale</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@koracoffee.example">hello@koracoffee.example</a></li>
+        <li><a href="tel:+251110000000">+251 11 000 0000</a></li>
+        <li>Addis Ababa, Ethiopia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 KORA Coffee. All rights reserved.</p>
+    <p>Ancient knowledge. Better tomorrows.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
