@@ -27,7 +27,6 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          cp -r 01-frontend-dev-portfolio _site/01-frontend-dev-portfolio
           cp -r 02-hotel-luxury-boutique _site/02-hotel-luxury-boutique
           cp -r 03-hotel-booking-platform _site/03-hotel-booking-platform
           cp -r 04-hotel-admin-system _site/04-hotel-admin-system
@@ -45,7 +44,6 @@ jobs:
           <body>
             <h1>Frontend Projects</h1>
             <ul>
-              <li><a href="01-frontend-dev-portfolio/">Frontend Dev Portfolio</a></li>
               <li><a href="02-hotel-luxury-boutique/">Hotel Luxury Boutique — The Verandah</a></li>
               <li><a href="03-hotel-booking-platform/">Hotel Booking Platform — Harborline</a></li>
               <li><a href="04-hotel-admin-system/">Hotel + Admin System — Meridian Stays</a></li>
