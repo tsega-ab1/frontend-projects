@@ -34,6 +34,7 @@ jobs:
           cp -r 06-portfolio-site _site/06-portfolio-site
           cp -r 07-kora-coffee _site/07-kora-coffee
           cp -r 08-smilelife-dental _site/08-smilelife-dental
+          cp -r 09-zuria-couture _site/09-zuria-couture
           cat > _site/index.html << 'PAGE'
           <!DOCTYPE html>
           <html lang="en">
@@ -51,6 +52,7 @@ jobs:
               <li><a href="06-portfolio-site/">Portfolio Site</a></li>
               <li><a href="07-kora-coffee/">KORA Coffee</a></li>
               <li><a href="08-smilelife-dental/">SmileLife Dental Hospital</a></li>
+              <li><a href="09-zuria-couture/">ZURIA — Ethiopian Couture</a></li>
             </ul>
           </body>
           </html>
