@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Order — ZURIA</title>
+<meta name="description" content="Book a made-to-measure or bespoke habesha kemis with ZURIA — submit your measurements or book an in-person fitting in Addis Ababa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">ZURIA<span>.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="our-craft.html">Our Craft</a></li>
+        <li><a href="custom-order.html" aria-current="page">Custom Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="#order-form"><span>Book a Fitting</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="visually-hidden">Toggle menu</span>&#9776;
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container custom-hero">
+      <div>
+        <p class="eyebrow">Custom Order</p>
+        <h1 style="font-size:clamp(2rem,4vw,2.8rem); font-style:italic;">Made to your exact measurements</h1>
+        <p class="hero__lede">Every ZURIA piece can be ordered made-to-measure. Submit your measurements online, or book an in-person fitting if you're in Addis Ababa.</p>
+        <a class="btn btn-primary" href="#order-form">Start Your Order</a>
+      </div>
+      <img src="assets/images/custom-order-hero.jpg" alt="A tailor measuring fabric for a bespoke habesha kemis" width="1200" height="900" loading="lazy">
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">How It Works</p>
+        <h2 id="how-heading">From measurements to delivery</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <h3>Choose your style</h3>
+          <p>Pick a collection piece or describe a fully custom design.</p>
+        </div>
+        <div class="step">
+          <h3>Submit measurements</h3>
+          <p>Use our guide to measure at home, or book an in-person fitting.</p>
+        </div>
+        <div class="step">
+          <h3>Weaving &amp; cutting</h3>
+          <p>Your piece goes to a weaver, then is cut and fitted to your measurements.</p>
+        </div>
+        <div class="step">
+          <h3>Delivery</h3>
+          <p>3–5 weeks for most pieces; rush orders available for an added fee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="order-form" aria-labelledby="form-heading">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Start Your Order</p>
+        <h2 id="form-heading">Tell us what you're looking for</h2>
+      </div>
+      <form class="measure-form" id="order-form-el" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="collection">Collection</label>
+            <select id="collection" name="collection">
+              <option>The Wedding Kemis</option>
+              <option>Meskel &amp; Timkat</option>
+              <option>Everyday Elegance</option>
+              <option>Netela &amp; Shawls</option>
+              <option>Fully custom design</option>
+            </select>
+          </div>
+          <div>
+            <label for="occasion-date">Occasion date</label>
+            <input type="date" id="occasion-date" name="occasion-date">
+          </div>
+        </div>
+        <div>
+          <label for="fitting">Measurement method</label>
+          <select id="fitting" name="fitting">
+            <option>Submit measurements online (guide sent by email)</option>
+            <option>Book an in-person fitting in Addis Ababa</option>
+          </select>
+        </div>
+        <div>
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" placeholder="Colors, border width, or any design details you have in mind."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+        <p class="form-note" id="order-note" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo" style="color:var(--ivory);">ZURIA<span>.</span></p>
+      <p>Handwoven Ethiopian couture, made to order in Addis Ababa.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="shop.html">All Collections</a></li>
+        <li><a href="custom-order.html">Custom Order</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>House</h3>
+      <ul>
+        <li><a href="our-craft.html">Our Craft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@zuria.example">hello@zuria.example</a></li>
+        <li><a href="tel:+251911234567">+251 91 123 4567</a></li>
+        <li>Addis Ababa, Ethiopia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 ZURIA. All rights reserved.</p>
+    <p>Woven by hand. Worn for a lifetime.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — ZURIA</title>
+<meta name="description" content="Visit the ZURIA atelier in Addis Ababa or get in touch by phone or email.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">ZURIA<span>.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="our-craft.html">Our Craft</a></li>
+        <li><a href="custom-order.html">Custom Order</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-outline" href="custom-order.html"><span>Book a Fitting</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="visually-hidden">Toggle menu</span>&#9776;
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero container">
+    <p class="eyebrow">Contact</p>
+    <h1>Visit the atelier</h1>
+    <p class="hero__lede">Come see the loom in person, or reach us by phone or email — we typically reply within one business day.</p>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="contact-info__item">
+          <span class="contact-info__icon" aria-hidden="true">&#128222;</span>
+          <div><h3>Phone</h3><p><a class="text-link" href="tel:+251911234567">+251 91 123 4567</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <span class="contact-info__icon" aria-hidden="true">&#9993;</span>
+          <div><h3>Email</h3><p><a class="text-link" href="mailto:hello@zuria.example">hello@zuria.example</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <span class="contact-info__icon" aria-hidden="true">&#128205;</span>
+          <div><h3>Atelier</h3><p>Bole Road, Addis Ababa, Ethiopia</p></div>
+        </div>
+        <div class="contact-info__item">
+          <span class="contact-info__icon" aria-hidden="true">&#128337;</span>
+          <div><h3>Hours</h3><p>Tuesday – Saturday, 10:00 AM – 6:00 PM. Fittings by appointment.</p></div>
+        </div>
+        <img src="assets/images/storefront.jpg" alt="ZURIA atelier storefront in Addis Ababa" width="1200" height="900" loading="lazy" style="border-radius: var(--radius); margin-top: 1rem;">
+      </div>
+
+      <form class="measure-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="c-name">Full name</label>
+            <input type="text" id="c-name" name="name" required autocomplete="name">
+          </div>
+          <div>
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div>
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note" id="contact-note" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo" style="color:var(--ivory);">ZURIA<span>.</span></p>
+      <p>Handwoven Ethiopian couture, made to order in Addis Ababa.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="shop.html">All Collections</a></li>
+        <li><a href="custom-order.html">Custom Order</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>House</h3>
+      <ul>
+        <li><a href="our-craft.html">Our Craft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@zuria.example">hello@zuria.example</a></li>
+        <li><a href="tel:+251911234567">+251 91 123 4567</a></li>
+        <li>Addis Ababa, Ethiopia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 ZURIA. All rights reserved.</p>
+    <p>Woven by hand. Worn for a lifetime.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
